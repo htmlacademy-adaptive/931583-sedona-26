@@ -1,0 +1,37 @@
+
+.menu {
+  position: relative;
+}
+
+.menu__button {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.menu__list {
+  @include reset-list;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.menu__item {
+  background-color: $color-bg;
+  box-shadow: 0 -1px 0 0 rgba(1, 1, 1, 0.2) inset, inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  &:last-child {
+    box-shadow: 0 -14px 15px -15px rgba(0, 0, 0, 0.4) inset;
+  }
+}
+
+.menu__link {
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 12px;
+  color: $color-text-second;
+  text-decoration: none;
+  text-align: center;
+}
