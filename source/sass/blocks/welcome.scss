@@ -1,0 +1,17 @@
+.welcome {
+  position: relative;
+
+  &--index {
+    padding: 90px 19px 85px;
+    background-image: url("../../img/backgrounds/bg-welcome-bottom-mobile.svg"), url("../../img/backgrounds/bg-welcome-mobile.jpg");
+    background-color: $color-bg;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.welcome__image {
+  display: block;
+  margin: 0 auto;
+}

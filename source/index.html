@@ -10,10 +10,7 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="img/logo.svg" alt="Логотип интернет-магазина Седона" width="185" height="96">
-    </a>
-    <nav class="menu">
+    <nav class="menu menu--closed menu--nojs">
       <button class="menu__button">
         <span class="visually-hidden">Кнопка меню</span>
       </button>
@@ -31,9 +28,12 @@
           <a href="#" class="menu__link">Html Academy</a>
         </li>
       </ul>
+      <a class="menu__logo menu__logo--opened" href="index.html">
+        <img class="menu__logo-image" src="img/logo.svg" alt="Логотип интернет-магазина Седона" width="185" height="96">
+      </a>
     </nav>
-    <div class="welcome">
-      <img class="welcome__image" src="img/intro-text-mobile.png" width="282" height="214"
+    <div class="welcome welcome--index">
+      <img class="welcome__image" src="img/welcome-text-mobile.png" width="282" height="214"
         alt="Welcome to the dorgeous Sedona">
     </div>
   </header>
@@ -126,6 +126,7 @@
     </div>
   </footer>
 
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

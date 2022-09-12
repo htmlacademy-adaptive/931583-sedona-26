@@ -38,9 +38,9 @@ const html = () => {
 // Scripts
 
 const scripts = () => {
-  return gulp.src("source/js/scripts.js")
+  return gulp.src("source/js/script.js")
     .pipe(uglify())
-    .pipe(rename("scripts.min.js"))
+    .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(browser.stream());
 }
@@ -159,7 +159,7 @@ export default gulp.series(
   gulp.parallel(
     styles,
     html,
-    // scripts,
+    scripts,
     svg,
     sprite,
     createWebp
