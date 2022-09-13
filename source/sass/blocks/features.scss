@@ -1,0 +1,9 @@
+.features {
+  @include reset-list;
+  background-color: #ffffff;
+}
+
+.features__wrap {
+  padding-top: 23px;
+  padding-bottom: 52px;
+}

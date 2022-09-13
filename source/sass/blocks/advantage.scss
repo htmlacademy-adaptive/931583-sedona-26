@@ -1,0 +1,57 @@
+.advantage {
+  background-color: $color-bg-second;
+
+  &:first-child {
+    padding-top: 46px;
+    background-image: url("../../img/backgrounds/bg-advatages-top-mobile.svg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--secondary {
+    padding-bottom: 0;
+    color: $color-text-second;
+    background-color: $color-bg;
+  }
+}
+
+.advantage__wrap {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.advantage__title {
+  margin-top: 0;
+  margin-bottom: 11px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantage__number {
+  margin-top: 0;
+  margin-bottom: 17px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantage__desc {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advatage__image {
+  display: block;
+  object-fit: cover;
+}
+
