@@ -1,11 +1,12 @@
 .basic-section {
   padding-top: 32px;
-  padding-bottom: 16px;
+  padding-bottom: 32px;
+  display: grid;
+  gap: 32px;
 }
 
 .basic-section__title {
-  margin-top: 0;
-  margin-bottom: 35px;
+  margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;

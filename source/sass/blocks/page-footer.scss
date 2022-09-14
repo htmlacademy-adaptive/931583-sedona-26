@@ -1,0 +1,21 @@
+.page-footer {
+  padding-top: 38px;
+  padding-bottom: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-footer__hashtag {
+  margin-top: 0;
+  margin-bottom: 34px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.page-footer__social {
+  margin-top: 0;
+  margin-bottom: 40px;
+}

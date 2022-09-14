@@ -14,6 +14,18 @@
   background-color: transparent;
   border: 0;
   outline: 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .menu--opened .menu__button {
@@ -100,6 +112,36 @@
   &:last-child {
     box-shadow: 0 -14px 15px -15px rgba(0, 0, 0, 0.4) inset;
   }
+
+  &:hover {
+    background-color: $color-bg-hover;
+  }
+
+  &:active {
+    background-color: $color-bg-active;
+
+    .menu__link {
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 153px;
+    background-color: transparent;
+
+    &:last-child {
+      box-shadow: none;
+    }
+
+    &:hover,
+    &:active {
+      background-color: transparent;
+    }
+
+    &:nth-child(3) {
+      margin-left: auto;
+    }
+  }
 }
 
 .menu__link {
@@ -109,6 +151,10 @@
   color: $color-text-second;
   text-decoration: none;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+  }
 }
 
 .menu__logo {
@@ -128,5 +174,11 @@
 
   &--closed {
     display: none;
+  }
+}
+
+.menu .menu__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
   }
 }
