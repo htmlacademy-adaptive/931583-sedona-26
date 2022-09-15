@@ -8,12 +8,17 @@
     padding-top: 47px;
     padding-bottom: 55px;
     max-width: 520px;
-  }
+    gap: 45px;
 
-  @media (min-width: $tablet-width) {
-    padding-top: 59px;
-    padding-bottom: 44px;
-    max-width: 520px;
+    &--opposite {
+      max-width: 458px;
+      padding-top: 61px;
+      padding-bottom: 58px;
+
+      .basic-section__title {
+        font-size: 30px;
+      }
+    }
   }
 }
 

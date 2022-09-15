@@ -21,8 +21,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    &--secondary {
+      grid-column: 3 span;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
 
     &--opposite {
       grid-template-columns: 2fr 1fr;
@@ -35,7 +38,9 @@
   padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
+    min-height: 256px;
     display: flex;
+    align-items: center;
     flex-direction: column;
     padding: 40px 32px 44px;
   }
