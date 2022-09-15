@@ -1,19 +1,17 @@
 .container {
   margin: 0 auto;
-  padding: 0 20px;
   max-width: $tablet-width;
+  height: auto;
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    padding: 0 30px;
-    max-width: calc($dekstop-width - 160px);
+    max-width: $dekstop-width;
   }
 }
 
 @media (min-width: $dekstop-width) {
   .container {
-    padding: 0 110px;
-    max-width: $dekstop-width;
+    box-shadow: 0 -5px 9px 2px #dbdbdb;
   }
 }

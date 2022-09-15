@@ -5,6 +5,11 @@
   &:not(:last-child) {
     margin-bottom: 23px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 98px;
+    padding-left: 0;
+  }
 }
 
 .feature__title {
@@ -15,6 +20,11 @@
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    text-align: center;
+  }
 }
 
 .feature__desc {
@@ -25,4 +35,8 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }

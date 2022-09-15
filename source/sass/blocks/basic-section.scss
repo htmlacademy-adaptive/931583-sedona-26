@@ -3,6 +3,18 @@
   padding-bottom: 32px;
   display: grid;
   gap: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 47px;
+    padding-bottom: 55px;
+    max-width: 520px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 59px;
+    padding-bottom: 44px;
+    max-width: 520px;
+  }
 }
 
 .basic-section__title {
@@ -12,6 +24,10 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .basic-section__desc {
