@@ -8,12 +8,9 @@
   <title>HTML Academy: Седона</title>
 </head>
 
-<body>
+<body class="container">
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="img/logo.svg" alt="Логотип интернет-магазина Седона">
-    </a>
-    <nav class="menu">
+    <nav class="menu menu--closed menu--nojs">
       <button class="menu__button">
         <span class="visually-hidden">Кнопка меню</span>
       </button>
@@ -22,19 +19,21 @@
           <a class="menu__link" href="index.html">Главная</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="photo.html">Фото и видео</a>
+          <a class="menu__link menu__link" href="photo.html">Фото и видео</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="form.html" >Форма отзыва</a>
+          <a class="menu__link menu__link--current" href="form.html">Форма отзыва</a>
         </li>
         <li class="menu__item">
           <a href="#" class="menu__link">Html Academy</a>
         </li>
       </ul>
+      <a class="menu__logo menu__logo--opened" href="index.html">
+        <img class="menu__logo-image" src="img/logo.svg" alt="Логотип интернет-магазина Седона" width="185" height="96">
+      </a>
     </nav>
-    <div class="welcome">
-      <img class="welcome__image" src="img/intro-text-mobile.png" width="282" height="214"
-        alt="Welcome to the dorgeous Sedona">
+    <div class="welcome welcome--index">
+      <img class="welcome__image" src="img/welcome-text.svg" alt="Welcome to the dorgeous Sedona">
     </div>
   </header>
 
@@ -43,26 +42,27 @@
 
     <article class="basic-section">
       <h2 class="basic-section__title">Оставьте свой отзыв</h2>
-      <p class="basic-section__desc">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <p class="basic-section__desc">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+        достопримечательностях</p>
     </article>
 
     <form class="form" action="/echo" method="post">
 
       <fieldset class="form__section">
-        <legend class="form__legend">
+        <h3 class="form__legend">
           Представьтесь:
-        </legend>
+        </h3>
         <div class="form__field-wrap">
           <label class="form__label" for="firstname">
-            Имя:
+            Имя*:
           </label>
           <input class="form__field" type="text" name="firstname" id="firstname" placeholder="Пётр" required="">
         </div>
         <div class="form__field-wrap">
           <label class="form__label" for="surname">
-            Фамилия:
+            Фамилия*:
           </label>
-          <input class="form__field" type="text" name="surname" id="surname" placeholder="Иванов">
+          <input class="form__field" type="text" name="surname" id="surname" placeholder="Пустота" required="">
         </div>
         <div class="form__field-wrap">
           <label class="form__label" for="midname">
@@ -73,29 +73,35 @@
       </fieldset>
 
       <fieldset class="form__section">
-        <legend class="form__legend">
+        <h3 class="form__legend">
           Контактная информация:
-        </legend>
+        </h3>
         <div class="form__field-wrap">
           <label class="form__label" for="phone">
-            Контактный телефон:
+            Контактный телефон*:
           </label>
-          <input class="form__field form__field--phone" type="tel" name="phone" id="phone"
-            placeholder="Введите телефон">
+          <div class="form__field-icon-wrap">
+            <input class="form__field form__field--phone" type="tel" name="phone" id="phone"
+              placeholder="Введите телефон" required="">
+            <div class="form__field-icon form__field-icon--phone"></div>
+          </div>
         </div>
         <div class="form__field-wrap">
           <label class="form__label" for="email">
-            Электронная почта:
+            Электронная почта*:
           </label>
-          <input class="form__field form__field--email" type="email" name="email" id="email"
-            placeholder="Введите e-mail">
+          <div class="form__field-icon-wrap">
+            <input class="form__field form__field--email" type="email" name="email" id="email"
+              placeholder="Введите e-mail" required="">
+            <div class="form__field-icon form__field-icon--email"></div>
+          </div>
         </div>
       </fieldset>
 
       <fieldset class="form__section">
-        <legend class="form__legend">
+        <h3 class="form__legend">
           Ваше общее впечатление:
-        </legend>
+        </h3>
         <div class="form__choice-wrap">
           <input class="form__radio" type="radio" name="rating" id="value1" checked>
           <label class="form__label form__label--radio" for="value1">
@@ -117,9 +123,9 @@
       </fieldset>
 
       <fieldset class="form__section">
-        <legend class="form__legend">
+        <h3 class="form__legend">
           Посещенные достопримечательности:
-        </legend>
+        </h3>
         <div class="form__choice-wrap">
           <input class="form__checkbox" type="checkbox" name="check1" id="check1" checked>
           <label class="form__label form__label--checkbox" for="check1">
@@ -147,11 +153,11 @@
       </fieldset>
 
       <fieldset class="form__section">
-        <legend class="form__legend">
+        <h3 class="form__legend">
           Опишите свои эмоции:
-        </legend>
+        </h3>
         <textarea class="form__textbox" name="overview" id="overview"
-            placeholder="Опишите подробно все свои восторги"></textarea>
+          placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
 
       <div class="form__button-wrap">
@@ -162,26 +168,49 @@
   </main>
 
   <footer class="page-footer">
-    <p class="hashtag">#visitsedona</p>
+    <p class="page-footer__hashtag">#visitsedona</p>
 
-    <ul class="page-footer__social social">
-      <li class="social__item">
-        <a href="#" class="social__link">VK</a>
-      </li>
-      <li class="social__item">
-        <a href="#" class="social__link">Telegram</a>
-      </li>
-      <li class="social__item">
-        <a href="#" class="social__link">Youtube</a>
-      </li>
-    </ul>
+    <div class="page-footer__social">
+      <ul class="social">
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <span class="visually-hidden">Вконтакте</span>
+            <svg class="social__icon" width="24" height="24">
+              <use xlink:href="img/icons/sprite.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <span class="visually-hidden">Telegram</span>
+            <svg class="social__icon" width="24" height="24">
+              <use xlink:href="img/icons/sprite.svg#telegram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <span class="visually-hidden">Youtube</span>
+            <svg class="social__icon" width="24" height="24">
+              <use xlink:href="img/icons/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <div class="pagefooter__copyright copyright">
-      <span class="copyright__text">Разработано</span>
-      <a href="" class="copyright__link">HTML</a>
+      <a href="" class="copyright__link">
+        <span class="copyright__text">Разработано</span>
+        <span class="visually-hidden">HTML Academy</span>
+        <svg class="copyright__icon" width="27" height="34">
+          <use xlink:href="img/icons/sprite.svg#htmlacademy"></use>
+        </svg>
+      </a>
     </div>
   </footer>
 
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
