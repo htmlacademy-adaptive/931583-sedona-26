@@ -1,5 +1,6 @@
 .advantages__list {
   @include reset-list;
+  counter-reset: number;
 
   @media (min-width: $tablet-width) {
     display: grid;

@@ -1,0 +1,127 @@
+.post {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  @media (max-width: calc($tablet-width - 1px)) {
+    &::after {
+      position: absolute;
+      top: 0;
+      content: "";
+      width: calc(100% + 40px);
+      height: 1px;
+      margin-left: -20px;
+      background-color: #e5e5e5;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &:first-child {
+      grid-column: 1 / 3;
+    }
+  }
+
+  @media (min-width: $dekstop-width) {
+    position: relative;
+
+    &:first-child {
+      grid-column: 1 / 4;
+    }
+  }
+}
+
+.post__wrap {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 20px 15px;
+    background-color: #f2f2f2;
+
+    &--color {
+      background-color: #eaeaea;
+    }
+  }
+
+  @media (min-width: $dekstop-width) {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+  }
+}
+
+.post__image {
+  width: 100%;
+  display: block;
+  min-height: 280px;
+  object-fit: cover;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 267px;
+    margin-bottom: 0;
+
+    &--first {
+      min-height: 400px;
+    }
+  }
+}
+
+.post__desc {
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.post__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.post__author {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.post__likes {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  gap: 14px;
+}
+
+.post__likes-icon-wrapper {
+  display: block;
+  line-height: 0;
+}
+
+.post__likes-icon {
+  fill: #b2b2b2;
+  width: 23px;
+  height: 21px;
+
+  @media (min-width: $dekstop-width) {
+    fill: #ffffff;
+  }
+}
+
+.post__likes-count {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  display: block;
+}
