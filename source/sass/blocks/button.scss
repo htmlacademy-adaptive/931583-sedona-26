@@ -30,4 +30,10 @@
     margin-bottom: 3px;
     border: none;
   }
+
+  &--section {
+    @media (min-width: $tablet-width) {
+      width: 458px;
+    }
+  }
 }
