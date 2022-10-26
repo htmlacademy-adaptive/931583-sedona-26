@@ -3,7 +3,7 @@
 
   &--index {
     padding: 90px 19px 85px;
-    background-image: url("../../img/backgrounds/bg-welcome-mobile.jpg");
+    background-image: url("../img/backgrounds/bg-welcome-mobile.jpg");
     background-color: $color-bg;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -18,14 +18,14 @@
       content: "";
       width: auto;
       height: 57px;
-      background-image: url("../../img/backgrounds/bg-welcome-bottom-dekstop.svg");
+      background-image: url("../img/backgrounds/bg-welcome-bottom-dekstop.svg");
       background-position: center bottom;
       background-repeat: no-repeat;
       background-size: cover;
     }
 
     @media (min-width: $tablet-width) {
-      background-image: url("../../img/backgrounds/bg-welcome-dekstop.jpg");
+      background-image: url("../img/backgrounds/bg-welcome-dekstop.jpg");
     }
   }
 }

@@ -209,6 +209,7 @@
   line-height: 26px;
   color: #000000;
   outline: none;
+  font-family: inherit;
 
   &:hover {
     background-color: #e5e5e5;
@@ -255,11 +256,11 @@
     background-repeat: no-repeat;
 
     &--email {
-      background-image: url("../../img/email.svg");
+      background-image: url("../img/email.svg");
     }
 
     &--phone {
-      background-image: url("../../img/phone.svg");
+      background-image: url("../img/phone.svg");
     }
   }
 }
@@ -278,7 +279,7 @@
 }
 
 .form__checkbox:checked + .form__label--checkbox::before {
-  background-image: url("../../img/tick.svg");
+  background-image: url("../img/tick.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -301,6 +302,7 @@
   line-height: 26px;
   resize: none;
   outline: none;
+  font-family: inherit;
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);

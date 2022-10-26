@@ -204,3 +204,11 @@
     display: none;
   }
 }
+
+.menu--nojs .menu__logo {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+  }
+}
