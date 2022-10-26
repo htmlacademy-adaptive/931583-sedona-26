@@ -1,0 +1,32 @@
+.social {
+  @include reset-list;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  min-height: 48px;
+  background-color: $color-bg;
+
+  &:hover {
+    background-color: $color-bg-hover;
+  }
+
+  &:active {
+    background-color: $color-bg-active;
+
+    .social__icon {
+      opacity: 0.3;
+    }
+  }
+}
+
+.social__icon {
+  fill: #ffffff;
+}

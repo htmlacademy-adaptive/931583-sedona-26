@@ -1,0 +1,17 @@
+.container {
+  margin: 0 auto;
+  max-width: $tablet-width;
+  height: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    max-width: $dekstop-width;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .container {
+    box-shadow: 0 -5px 9px 2px #dbdbdb;
+  }
+}
